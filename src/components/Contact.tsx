@@ -48,7 +48,7 @@ const SuccessMsg = ({
         isLoader={false}
       >
         <div>
-          <img
+          <Image
             className="scale-75"
             src="/assets/success.gif"
             id="spinner"

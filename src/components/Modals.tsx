@@ -8,21 +8,14 @@ interface Props {
   isOpen: boolean;
   isLoader: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
-  children?: any;
+  children?: React.ReactNode;
   width?: string;
 }
-
-const override = {
-  display: "block",
-  margin: "0 auto",
-  borderColor: "#44A8B3",
-};
 
 const CustomModal = ({
   title,
   isOpen,
   setIsOpen,
-  isLoader,
   children,
   width = "w-[700px]",
 }: Props) => {
