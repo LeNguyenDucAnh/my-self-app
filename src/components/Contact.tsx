@@ -8,8 +8,6 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "../../public/assets/contact.jpg";
 import { RotateLoader } from "react-spinners";
-import emailjs from "@emailjs/browser";
-import { emConfig } from "src/utils/constants";
 import CustomModal from "./Modals";
 
 const override = {
@@ -66,22 +64,22 @@ const SuccessMsg = ({
 };
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [subject, setSubject] = useState("");
+  // const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [showSuccessMsg, setShowSuccessMsg] = useState(false);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    const templateParams = {
-      name,
-      email,
-      subject,
-      message,
-    };
+    // const templateParams = {
+    //   name,
+    //   email,
+    //   subject,
+    //   message,
+    // };
     // emailjs.send(emConfig.serviceID, emConfig.templateID, templateParams, emConfig.publicID);
     setTimeout(() => {
       setLoading(false);
@@ -181,7 +179,7 @@ const Contact = () => {
                       type="text"
                       name="name"
                       autoComplete="on"
-                      onChange={(e) => setName(e.target.value)}
+                      // onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                   <div className="flex flex-col py-2">
@@ -194,7 +192,7 @@ const Contact = () => {
                       type="email"
                       name="email"
                       autoComplete="on"
-                      onChange={(e) => setEmail(e.target.value)}
+                      // onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                   <div className="flex flex-col py-2">
@@ -207,7 +205,7 @@ const Contact = () => {
                       type="text"
                       name="subject"
                       autoComplete="off"
-                      onChange={(e) => setSubject(e.target.value)}
+                      // onChange={(e) => setSubject(e.target.value)}
                     />
                   </div>
                   <div className="flex flex-col py-2">
@@ -220,7 +218,7 @@ const Contact = () => {
                       rows={10}
                       name="message"
                       autoComplete="off"
-                      onChange={(e) => setMessage(e.target.value)}
+                      // onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                   </div>
                   <button className="w-full p-4 text-gray-100 mt-4">
