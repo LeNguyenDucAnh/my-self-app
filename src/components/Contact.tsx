@@ -119,7 +119,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <h2 className="py-2">Nosarumen Imuentinyan</h2>
+                  <h2 className="py-2">Lê Nguyễn Đức Anh</h2>
                   <p className="text-xl mt-2">Front-End Developer</p>
                   <p className="py-4 text-lg">
                     I am available for freelance or full-time positions. Contact
@@ -133,7 +133,7 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center justify-between py-4">
                     <a
-                      href="https://www.linkedin.com/in/nosarumen-imuentinyan/"
+                      href="https://linkedin.com/in/anhlndlinkein"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -142,7 +142,7 @@ const Contact = () => {
                       </div>
                     </a>
                     <a
-                      href="https://github.com/Sir-Rumeh/"
+                      href="https://github.com/LeNguyenDucAnh"
                       target="_blank"
                       rel="noreferrer"
                     >
