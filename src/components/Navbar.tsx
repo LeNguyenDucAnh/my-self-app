@@ -168,7 +168,7 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a
-                  href="https://www.linkedin.com/in/nosarumen-imuentinyan/"
+                  href="https://linkedin.com/in/anhlndlinkein"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -177,7 +177,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/Sir-Rumeh/"
+                  href="https://github.com/LeNguyenDucAnh"
                   target="_blank"
                   rel="noreferrer"
                 >

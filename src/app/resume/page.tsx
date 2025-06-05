@@ -3,10 +3,11 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn, FaDownload } from "react-icons/fa";
-import ResumeShot from "../../../public/assets/Nosarumen_Imuentinyan_Resume.jpg";
+import ResumeShot1 from "../../../public/assets/Resume-Anhlnd_001.png";
+import ResumeShot2 from "../../../public/assets/Resume-Anhlnd_002.png";
 
 const ResumePdf = () => {
-  const resumePdfLink = "../../../assets/Nosarumen_Imuentinyan_Resume.pdf";
+  const resumePdfLink = "../../../assets/Resume-Anhlnd.pdf";
   return (
     <>
       <div className="relative">
@@ -18,8 +19,15 @@ const ResumePdf = () => {
           </a>
         </div>
         <Image
-          src={ResumeShot}
-          className="rounded-xl "
+          src={ResumeShot1}
+          className="rounded-xl w-[90%]"
+          alt="/"
+          loading="lazy"
+        />
+        <div className="m-4"></div>
+        <Image
+          src={ResumeShot2}
+          className="rounded-xl w-[90%]"
           alt="/"
           loading="lazy"
         />
@@ -32,7 +40,7 @@ const Resume = () => {
   return (
     <>
       <Head>
-        <title>Nosarumen | Resume</title>
+        <title>AnhLND | Resume</title>
         <meta
           name="description"
           content="I’m a front-end web developer specialized in usinf react, nextjs and typescript to build exceptional user interface."
@@ -43,10 +51,10 @@ const Resume = () => {
       <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
         <h2 className="text-center">Resume</h2>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
-          <h2 className="text-center">Nosarumen Imuentinyan</h2>
+          <h2 className="text-center">Lê Nguyễn Đức Anh</h2>
           <div className="flex">
             <a
-              href="https://www.linkedin.com/in/nosarumen-imuentinyan/"
+              href="https://linkedin.com/in/anhlndlinkein"
               target="_blank"
               rel="noreferrer"
             >
@@ -57,7 +65,7 @@ const Resume = () => {
               />
             </a>
             <a
-              href="https://github.com/Sir-Rumeh/"
+              href="https://github.com/LeNguyenDucAnh"
               target="_blank"
               rel="noreferrer"
             >
