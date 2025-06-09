@@ -58,7 +58,9 @@ const Navbar = () => {
               <a href="#about">About</a>
             </li>
             <li className="ml-2 text-sm uppercase btn-hover">
-              <Link href="/#skills">Skills</Link>
+              <Link href="/#skills" prefetch={false}>
+                Skills
+              </Link>
             </li>
             <li className="ml-2 text-sm uppercase btn-hover">
               <Link href="/#experience">Experience</Link>
