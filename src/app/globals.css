@@ -56,6 +56,23 @@ body {
   overflow-x: hidden;
 }
 
+.btn-base {
+  background: #c94041;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px 0 rgba(23, 23, 23, 0.08);
+  cursor: pointer;
+}
+
+.btn-base:hover {
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(201, 64, 65, 0.15);
+}
+
 h1,
 h2,
 h3,
@@ -105,13 +122,3 @@ h3 {
 li {
   cursor: pointer;
 }
-
-/* button {
-  border-radius: 0.75rem; 
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    to right,
-    var(--tw-gradient-stops, #06b6d4, #3b82f6)
-  );
-  color: #fff;
-} */
