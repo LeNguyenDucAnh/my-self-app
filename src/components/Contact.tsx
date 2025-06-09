@@ -44,7 +44,7 @@ const SuccessMsg = ({
         isOpen={showSuccessMsg}
         setIsOpen={setShowSuccessMsg}
         title="Email Sent"
-        width="700px"
+        width="350px"
         isLoader={false}
       >
         <div>
@@ -53,6 +53,8 @@ const SuccessMsg = ({
             src="/assets/success.gif"
             id="spinner"
             alt="spinner"
+            width={300}
+            height={300}
           />
         </div>
         <h3 className="text-center mt-2">
@@ -221,7 +223,7 @@ const Contact = () => {
                       // onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                   </div>
-                  <button className="w-full p-4 text-gray-100 mt-4">
+                  <button className="btn-base m-auto w-full">
                     Send Message
                   </button>
                 </form>
