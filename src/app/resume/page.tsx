@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn, FaDownload } from "react-icons/fa";
-import ResumeShot1 from "../../../public/assets/Resume-Anhlnd_001.png";
-import ResumeShot2 from "../../../public/assets/Resume-Anhlnd_002.png";
+import ResumeShot1 from "../../../public/assets/Resume_ENG_page-0001.jpg";
+import ResumeShot2 from "../../../public/assets/Resume_ENG_page-0002.jpg";
 
 const ResumePdf = () => {
   const resumePdfLink = "../../../assets/Resume-Anhlnd.pdf";
@@ -20,14 +20,13 @@ const ResumePdf = () => {
         </div>
         <Image
           src={ResumeShot1}
-          className="rounded-xl w-[90%]"
+          className="rounded-tl-xl rounded-tr-xl w-[90%]"
           alt="/"
           loading="lazy"
         />
-        <div className="m-4"></div>
         <Image
           src={ResumeShot2}
-          className="rounded-xl w-[90%]"
+          className="rounded-bl-xl rounded-br-xl w-[90%]"
           alt="/"
           loading="lazy"
         />
