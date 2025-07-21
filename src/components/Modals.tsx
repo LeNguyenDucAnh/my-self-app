@@ -57,7 +57,7 @@ const CustomModal = ({
                 className="mr-3"
                 onClick={() => setIsOpen(false)}
               >
-                <p className="text-primary text-xl">X</p>
+                <p className="text-primary text-xl pointer">X</p>
               </button>
             </div>
             <div className="-mt-3 pb-6">{children}</div>

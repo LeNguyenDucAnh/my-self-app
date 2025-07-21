@@ -31,7 +31,7 @@ const Loader = ({ loading }: { loading: boolean }) => {
     </div>
   );
 };
-const SuccessMsg = ({
+const ShowMsg = ({
   showSuccessMsg,
   setShowSuccessMsg,
 }: {
@@ -71,7 +71,7 @@ const Contact = () => {
   // const [subject, setSubject] = useState("");
   // const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const [showSuccessMsg, setShowSuccessMsg] = useState(false);
+  const [showMsg, setShowMsg] = useState(false);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -85,9 +85,9 @@ const Contact = () => {
     // emailjs.send(emConfig.serviceID, emConfig.templateID, templateParams, emConfig.publicID);
     setTimeout(() => {
       setLoading(false);
-      setShowSuccessMsg(true);
+      setShowMsg(true);
       setTimeout(() => {
-        setShowSuccessMsg(false);
+        setShowMsg(false);
       }, 4000);
     }, 1500);
   };
@@ -240,11 +240,8 @@ const Contact = () => {
         </div>
       </div>
       {loading && <Loader loading={loading} />}
-      {showSuccessMsg && (
-        <SuccessMsg
-          showSuccessMsg={showSuccessMsg}
-          setShowSuccessMsg={setShowSuccessMsg}
-        />
+      {showMsg && (
+        <ShowMsg showSuccessMsg={showMsg} setShowSuccessMsg={setShowMsg} />
       )}
     </>
   );
