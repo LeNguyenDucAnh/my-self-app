@@ -61,13 +61,13 @@ const Navbar = () => {
               <a href="#skills">Skills</a>
             </li>
             <li className="ml-2 text-sm uppercase btn-hover">
-              <Link href="/#experience">Experience</Link>
+              <a href="#experience">Experience</a>
             </li>
             {/* <li className="ml-2 text-sm uppercase btn-hover">
               <Link href="/#projects">Projects</Link>
             </li> */}
             <li className="ml-2 text-sm uppercase btn-hover">
-              <Link href="/#contact">Contact</Link>
+              <a href="#contact">Contact</a>
             </li>
 
             <li className="ml-5 text-sm uppercase flex items-center gap-x-3 btn-hover">
@@ -130,32 +130,32 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href="/#about" className="hover:text-custom">
+              <a href="#about" className="hover:text-custom">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   About
                 </li>
-              </Link>
-              <Link href="/#skills" className="hover:text-custom">
+              </a>
+              <a href="#skills" className="hover:text-custom">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Skills
                 </li>
-              </Link>
-              <Link href="/#experience" className="hover:text-custom">
+              </a>
+              <a href="#experience" className="hover:text-custom">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Experience
                 </li>
-              </Link>
+              </a>
               {/* <Link href="/#projects" className="hover:text-custom">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects
                 </li>
               </Link> */}
 
-              <Link href="/#contact" className="hover:text-custom">
+              <a href="#contact" className="hover:text-custom">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Contact
                 </li>
-              </Link>
+              </a>
               <Link href="/resume" className="hover:text-custom">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Resume
@@ -185,14 +185,14 @@ const Navbar = () => {
                     <FaGithub title="GitHub" />
                   </div>
                 </a>
-                <Link href="/#contact">
+                <a href="#contact">
                   <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in hover:bg-secondary duration-300"
                   >
                     <AiOutlineMail title="Contact" />
                   </div>
-                </Link>
+                </a>
                 <Link href="/resume">
                   <div
                     onClick={() => setNav(!nav)}

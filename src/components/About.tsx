@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import AboutImg from "../../public/assets/about.jpg";
 
@@ -34,13 +33,13 @@ const About = () => {
             needed. I believe that being a great developer is not using one
             specific language, but choosing the best tool for the job.
           </p>
-          <div className="w-[50%]">
+          {/* <div className="w-[50%]">
             <Link href="/#projects">
               <p className="py-2 text-gray-600 underline cursor-pointer text-lg hover:text-primary">
                 Check out some of my latest projects.
               </p>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <div data-aos="fade-up" data-aos-duration="1000">

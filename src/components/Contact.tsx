@@ -50,7 +50,7 @@ const ShowMsg = ({
         <div>
           <Image
             className="scale-75"
-            src="/assets/success.gif"
+            src="/assets/sent-success.png"
             id="spinner"
             alt="spinner"
             width={300}
